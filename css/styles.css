@@ -334,6 +334,19 @@ a {
   margin-bottom: 2rem;
 }
 
+.plan--popular .card__header {
+  position: relative;
+}
+
+.plan--popular .card__header::before {
+  content: url(../images/popular.svg);
+  display: inline-block;
+  position: absolute;
+  right: 5%;
+  top: -6px;
+  width: 40px;
+}
+
 @media screen and (min-width: 1024px) {
   .plan__name {
     font-size: 1.4rem;
@@ -350,4 +363,21 @@ a {
   .plan__description {
     font-size: 1.7rem;
   }
+}
+
+/* Media */
+.media {
+  display: flex;
+}
+
+.media__image {
+  margin-top: 1rem;
+}
+
+.media__body {
+  margin: 0 2rem;
+}
+
+.media__title {
+  margin-top: 0;
 }
