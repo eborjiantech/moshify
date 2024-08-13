@@ -16,8 +16,14 @@
       content="Moshify is an imaginary cloud hosting company."
     />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://moshified.com/moshify.jpg" />
-    <meta property="og:url" content="https://www.moshified.com/" />
+    <meta
+      property="og:image"
+      content="https://moshify-eborjiantech.netlify.app/moshify-og-image.png"
+    />
+    <meta
+      property="og:url"
+      content="https://moshify-eborjiantech.netlify.app/"
+    />
     <title>Moshify - Go Online for Just $9</title>
     <link rel="icon" href="/favicon-sm.png" />
     <link rel="apple-touch-icon" sizes="72x72" href="/favicon-md.png" />
@@ -28,14 +34,15 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <header>
       <nav class="nav collapsible">
-        <a class="nav__brand" href="/"><img src="images/logo.svg" alt="" /></a>
+        <a class="nav__brand" href="/" aria-label="Moshify"
+          ><img src="images/logo.svg" alt=""
+        /></a>
         <svg class="icon icon--white nav__toggler">
           <use xlink:href="images/sprite.svg#menu"></use>
         </svg>
@@ -359,10 +366,14 @@
         <div class="card testimonial">
           <div class="grid grid--1x2">
             <div class="testimonial__image">
-              <img
-                src="images/testimonial.jpg"
-                alt="A happy, smiling customer"
-              />
+              <picture>
+                <source type="image/webp" srcset="images/testimonial.webp" />
+                <source type="image/jpg" srcset="images/testimonial.jpg" />
+                <img
+                  src="images/testimonial.jpg"
+                  alt="A happy, smiling customer"
+                />
+              </picture>
               <span class="icon-container icon-container--accent">
                 <svg class="icon icon--white icon--small">
                   <use xlink:href="images/sprite.svg#quotes"></use>
