@@ -677,8 +677,8 @@ a {
 }
 
 .nav__brand {
-  transform: translateY(5px);
-  width: 150px;
+  transform: translate(14px, 4px);
+  width: 125px;
 }
 
 .nav__toggler {
@@ -870,7 +870,8 @@ a {
 }
 
 .footer__brand img {
-  max-width: 230px;
+  margin-bottom: 1rem;
+  max-width: 190px;
 }
 
 .footer__copyright {
@@ -906,7 +907,7 @@ a {
   }
 
   .footer__brand {
-    margin-top: 1rem;
+    margin-top: 2rem;
     order: -1;
   }
 
